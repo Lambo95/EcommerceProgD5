@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="EcommerceProgD5.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        img {
+            height: 18em
+        }
+
+        .card {
+            margin: 2rem
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid justify-content-center">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Default.aspx">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Carrello.aspx">Carrello</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+            <div class="container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <footer class="footer mt-5">
+                <div class="bg-light rounded d-flex justify-content-evenly align-items-center p-3 w-100">
+                    <div>
+                        <p class="text-dark">&copy; Company 2022</p>
+                    </div>
+
+                    <div>
+                        <ul class="mb-2 mb-lg-0 d-flex list-unstyled  ">
+                            <li>
+                                <a href="https://www.instagram.com/" class="btn btn-light"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://it-it.facebook.com/" class="btn btn-light"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="tel:0123456789" class="btn btn-light"><i class="bi bi-telephone"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
